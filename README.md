@@ -7,5 +7,7 @@ Please consider this Alpha software - a more reliable Beta will be released by t
 
 #HiroMacro Run Settings
 Times: 200
+
 Interval: 0
+
 Speed: 1x
