@@ -1,10 +1,7 @@
 DEVICE: SM-N9005 5.1.1
 SCREEN_SIZE: 1080x1920 (softkey)
 
-//DO NOT LEAVING RUNNING UNATTENDED
-//THE MACRO WILL END UP ON THE MADDEN CASH SCREEN!
-//Uncomment the :start command if you have read the warning above and want to use the macro
-//:start
+:start
 sleep 250
 //unpause
 touchDown 0 800 1400
