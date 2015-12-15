@@ -1,0 +1,105 @@
+DEVICE: SM-N9005 5.1.1
+SCREEN_SIZE: 1080x1920 (softkey)
+
+:start
+var #poss 0
+var #special 0
+
+sleep 250
+//unpause
+touchDown 0 800 1400
+sleep 21
+touchUp 0
+
+//Select by play type
+sleep 150
+touchDown 0 830 1026
+sleep 89
+touchUp 0
+
+sleep 1500
+touchDown 0 357 980
+sleep 137
+touchUp 0
+sleep 3000
+
+getColorGray #poss 1022 1002
+getColorGray #special 391 354
+
+if #poss == 0
+  if #special==137
+    toast Special Teams
+  endif
+  toast Defense
+else
+  toast Offense
+endif
+
+
+//pass /zone
+touchDown 0 648 971
+sleep 225
+touchUp 0
+sleep 500
+
+
+
+//hb toss /OLB dogs fire
+touchDown 0 638 971
+sleep 113
+touchUp 0
+sleep 2500
+
+//make the kicking motion
+touchDown 0 282 952
+sleep 138
+touchMove 0 288 952
+sleep 11
+touchMove 0 313 952
+sleep 11
+touchMove 0 348 952
+sleep 11
+touchMove 0 408 952
+sleep 14
+touchMove 0 471 952
+sleep 19
+touchMove 0 560 952
+sleep 4
+touchMove 0 621 952
+sleep 7
+touchMove 0 710 952
+sleep 12
+touchMove 0 795 952
+sleep 11
+touchMove 0 859 952
+sleep 14
+touchMove 0 963 952
+sleep 9
+touchMove 0 1023 952
+sleep 10
+
+//Snap
+touchDown 0 124 1533
+sleep 25
+touchUp 0
+
+sleep 2250
+
+//Pass
+touchDown 0 838 1500
+sleep 25
+touchMove 0 838 1500
+sleep 11
+touchUp 0
+
+touchDown 0 600 1500
+sleep 25
+touchMove 0 600 1500
+sleep 11
+touchUp 0
+
+//allow time for play to finish
+sleep 7000
+
+
+:end
