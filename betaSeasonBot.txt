@@ -1,0 +1,104 @@
+DEVICE: SM-N9005 5.1.1
+SCREEN_SIZE: 1080x1920 (softkey)
+
+//DO NOT LEAVING RUNNING UNATTENDED
+//THE MACRO WILL END UP ON THE MADDEN CASH SCREEN!
+//Uncomment the :start command if you have read the warning above and want to use the macro
+//:start
+sleep 250
+//unpause
+touchDown 0 986 1563
+sleep 21
+touchUp 0
+
+sleep 150
+touchDown 0 830 1026
+sleep 89
+touchUp 0
+
+sleep 1994
+touchDown 0 357 980
+sleep 137
+touchUp 0
+sleep 3000
+
+//run /man
+touchDown 0 635 602
+sleep 225
+touchUp 0
+sleep 500
+
+// Flip play to give RB more room
+touchDown 0 835 1395
+sleep 102
+touchUp 0
+sleep 200
+
+//hb toss /OLB dogs fire
+touchDown 0 422 591
+sleep 113
+touchUp 0
+sleep 2500
+
+//Snap
+touchDown 0 124 1533
+sleep 25
+touchUp 0
+
+sleep 1500
+
+//make the kicking motion
+touchDown 0 282 952
+sleep 138
+touchMove 0 288 952
+sleep 11
+touchMove 0 313 952
+sleep 11
+touchMove 0 348 952
+sleep 11
+touchMove 0 408 952
+sleep 14
+touchMove 0 471 952
+sleep 19
+touchMove 0 560 952
+sleep 4
+touchMove 0 621 952
+sleep 7
+touchMove 0 710 952
+sleep 12
+touchMove 0 795 952
+sleep 11
+touchMove 0 859 952
+sleep 14
+touchMove 0 963 952
+sleep 9
+touchMove 0 1023 952
+sleep 10
+
+//Do skill move (can help make first player miss on HB toss)
+touchUp 0
+touchDown 0 124 1533
+sleep 57
+touchMove 0 127 1530
+sleep 11
+touchUp 0
+
+sleep 1343
+touchDown 0 209 1520
+sleep 78
+touchUp 0
+sleep 172
+touchDown 0 188 1531
+sleep 87
+touchUp 0
+sleep 116
+touchDown 0 177 1532
+sleep 86
+touchUp 0
+
+
+//allow time for play to finish
+sleep 7000
+
+
+:end
