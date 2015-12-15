@@ -26,29 +26,76 @@ sleep 3000
 getColorGray #poss 1022 1002
 getColorGray #special 391 354
 
-if #poss == 0
-  if #special==137
+  if #special == 137
     toast Special Teams
+    
+touchDown 0 625 602
+sleep 225
+touchUp 0
+sleep 500
+
+//OLB dogs fire
+touchDown 0 422 591
+sleep 113
+touchUp 0
+sleep 2500
+sleep 5000
+    goto :skip
   endif
+
+if #poss == 0
   toast Defense
+//man
+touchDown 0 625 602
+sleep 225
+touchUp 0
+sleep 500
+
+//OLB dogs fire
+touchDown 0 422 591
+sleep 113
+touchUp 0
+sleep 2500
+
 else
   toast Offense
-endif
-
-
-//pass /zone
+//pass
 touchDown 0 648 971
 sleep 225
 touchUp 0
 sleep 500
 
-
-
-//hb toss /OLB dogs fire
-touchDown 0 638 971
+//Slot Drag
+touchDown 0 313 1411
 sleep 113
 touchUp 0
 sleep 2500
+endif
+
+
+
+
+
+
+//Snap
+touchDown 0 124 1533
+sleep 25
+touchUp 0
+
+sleep 2250
+
+//Pass
+touchDown 0 600 1700
+sleep 25
+touchMove 0 600 1700
+sleep 11
+touchUp 0
+
+touchDown 0 700 1700
+sleep 25
+touchMove 0 700 1700
+sleep 11
+touchUp 0
 
 //make the kicking motion
 touchDown 0 282 952
@@ -77,26 +124,9 @@ touchMove 0 963 952
 sleep 9
 touchMove 0 1023 952
 sleep 10
+touchup 0
 
-//Snap
-touchDown 0 124 1533
-sleep 25
-touchUp 0
-
-sleep 2250
-
-//Pass
-touchDown 0 838 1500
-sleep 25
-touchMove 0 838 1500
-sleep 11
-touchUp 0
-
-touchDown 0 600 1500
-sleep 25
-touchMove 0 600 1500
-sleep 11
-touchUp 0
+:skip
 
 //allow time for play to finish
 sleep 7000
