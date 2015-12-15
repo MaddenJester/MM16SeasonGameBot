@@ -7,7 +7,7 @@ SCREEN_SIZE: 1080x1920 (softkey)
 //:start
 sleep 250
 //unpause
-touchDown 0 986 1563
+touchDown 0 800 1400
 sleep 21
 touchUp 0
 
